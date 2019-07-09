@@ -1,0 +1,379 @@
+
+/* -------------  HEADER  ------------ */
+.body {
+    margin-left: 120px;
+    margin-right: 120px;
+    /* border: 1px solid black; */
+}
+.Logo img {
+    height: 40px;
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+.Top {
+    display: flex;
+    justify-content: space-between;
+}
+.Search {
+    margin-top: 30px;
+}
+.Home {
+    opacity: 0.5;
+}
+.Search input {
+    width: 350px;
+    /* border-radius: 10px; */
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #BBBBBB;
+    opacity: 0.7;
+    font-family: Indie Flower;
+}
+.Account{
+    margin-top: 30px;
+    /* opacity: 0.5; */
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Oldenburg;
+}
+.Menu ul li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 25px;
+    cursor: pointer;
+    font-family: 'Oldenburg';
+}
+.EU {
+    cursor: pointer;
+    font-family: Oldenburg;
+    font-size: 11px;
+}
+.dropdown-item {
+    font-family: Oldenburg;
+}
+.dropdown-item:hover {
+    background-color: gray;
+}
+/* .EN {
+    opacity: 0.5;
+    cursor: pointer;
+    font-family: Oldenburg;
+} */
+.Phone span {
+    opacity: 0.5;
+}
+/*------------------  SIDEBAR  --------------*/
+/*-------Category--------*/
+.Category ul li{
+    list-style-type: none;
+}
+.Category ul .title {
+    background-color: black;
+    color: white;
+    height: 57px;
+}
+.Category ul .ct{
+    padding-top: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.Category ul .ct:hover {
+    background-color: gray;
+}
+/*--------Deal Of the day-------*/
+.Deal {
+    background-color: black;
+    height: 280px;
+    color: white;
+    font-family: 'Oldenburg';
+    text-align: center;
+    padding-top: 90px;
+}
+.Deal .Content {
+    font-size: 13px;
+    opacity: 0.5;
+}
+.Deal .ShopNow {
+    margin-top: 35px;
+    font-size: 15px;
+}
+.ShopNow button {
+    color: white;
+    background-color: black;
+}
+/*---------Latest Products---------*/
+.Products img {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+.Name {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Price {
+    opacity: 0.5;
+}
+/*-----------Sale----------*/
+.SaleOff {
+    background-color: black;
+    height: 220px;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+.Child {
+    border: 1px dashed white;
+    height: 90%;
+    width: 80%;
+    margin-left: 22px;
+    font-family: 'Oldenburg';   
+    padding-top: 20px; 
+}
+.Child .Content {
+    font-size: 13px;
+    opacity: 0.5;
+}
+.Child .ShopNow {
+    margin-top: 35px;
+}
+/*----------Testimonial----------*/
+.Testimonial {
+    margin-top: 25px;
+    font-family: 'Indie Flower';
+
+}
+.QuoteContent {
+    margin-top: 10px;
+    font-size: 17px;
+}
+.Author {
+   font-size: 25px;
+}
+.CreateBy {
+    opacity: 0.6;
+}
+.Support {
+    background-color: black;
+    height: 100px;
+    color: white;
+}
+/*-----------Support-----------*/
+.Support{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Oldenburg;
+}
+.Support .Text {
+    padding-top: 22px;
+}
+/*------------Slider-------------*/
+.HomeSlider img {
+    height: 567px;
+    width: 100%;
+}
+/*-------------Banner------------*/
+.Banner {
+    margin-top: 17.5px;
+}
+.Women{
+    float: left;
+    width: 48%;
+    height: 200px;
+    background-image: url(IMG/Blog5.jpg);
+    background-size: cover;
+}
+.Men {
+    background-color: black;
+    float: right;
+    width: 48%;
+    height: 200px;
+    background-image: url(IMG/Feature3.jpg);
+    background-size: cover;
+}
+.ChildBanner {
+    color: white;
+    background-color: white;
+    width: 60%;
+    height: 35%;
+    margin-left: 72px;
+    margin-top: 65px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(0, 0,0, 0.5);
+    border: 2px white solid;
+}
+.CommonText {
+    font-family: Oldenburg;
+    font-size: 20px;
+    cursor: pointer;
+}
+.LookBook {
+    opacity: 0.7;
+    border-bottom: darkgrey solid 0.5px;
+    color: white;
+}
+/*-----------Trending------------*/
+.Trending {
+    margin-top: 255px;
+    font-family: 'Oldenburg';
+    /* border: 1px solid black; */
+}
+.card-img-top {
+    height: 292px;
+}
+.myStar .star {
+    color: #FF9933;
+}
+.card-body {
+    text-align: center;
+}
+.Prices {
+    opacity: 0.6;
+}
+
+.custom-card {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5;
+}
+.custom-card .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.custom-card:hover .front {
+    transform: rotateX(-180deg)
+}
+.custom-card .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0,0, 0.7); */
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .5s;
+
+}
+.custom-card:hover .back {
+    transform: rotateX(0deg)
+}
+.front img, .back-background img{
+    width: 97% !important;
+}
+.back-content, .back-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.back-content{
+    background-color: rgba(0, 0,0, 0.7);
+    width: 97% !important;
+}
+.last{
+    width: 100% !important;
+}
+.last-imgg{
+    width: 100% !important;
+}
+.btn-action {
+    align-content: center !important;
+    align-items: center !important;
+}
+.btn-add-to-wish-list, .btn-view{
+    height: 40px !important;
+}
+/*-----------Featured Product------------*/
+.Feature {
+    font-family: 'Oldenburg';
+}
+.Nextbtn {
+    margin-right: 12px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+.Prebtn {
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+.btn-previous,
+.btn-nextt {
+    position: absolute;
+    top: 125px;
+  height: 45px;
+  width: 45px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-color: gray;
+  border-radius: 50%;
+  border: 2px solid gray;
+  background-image: none;
+}
+
+/*-----------LATEST BLOGS------------*/
+.card-img-tops {
+    width: 100%;
+    height: 100%;
+}
+.card-title {
+    font-family: 'Oldenburg';
+}
+.card-bodys p{
+    font-size: 13px;
+    opacity: 0.6;
+    font-family: Indie Flower;
+}
+.card-bodys span {
+    font-family: Indie Flower;
+}
+/*-----------BENEFIT------------*/
+.BenefitIcon{
+  font-size: 40px;
+}
+.BenefitContent .text1 {
+    font-family: 'Oldenburg';
+}
+.BenefitContent .text2 {
+    opacity: 0.5;
+    font-size: 12px;
+}
+/*-----------Footer------------*/
+.list-unstyled {
+    font-size: 13px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.list-unstyled li:hover{
+    color: black;
+}
+.text-uppercase {
+    font-family: 'Oldenburg';
+    font-size: 18px;
+}
+.GetInTouch span {
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+/* ----------------Header----------------- */
+.Header {
+    display: flex;
+    justify-content: space-around;
+}
+.ListMenu li {
+    list-style-type: none;
+    display: inline;
+    font-family: Oldenburg;
+    font-size: 14px;
+    cursor: pointer;
+}
+.Logo{
+    text-align: center;
+    margin-left: 40px;
+}
+.TextLogo {
+    font-size: 38px;
+    font-family: Oldenburg;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.TextContent {
+    font-size: 13px;
+    opacity: 0.6;
+    /* cursor: pointer; */
+}
+.ListMenu .mg {
+    margin-left: 30px;
+}
+.Icon {
+    font-size: 20px;
+    margin-right: 40px;
+}
+.Selected {
+    opacity: 0.5;
+}
+
+/* ------------IMG-------------- */
+.CmImg img {
+    width: 82%;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 104px;
+
+}
+/* ------------Contact Us-------------- */
+.TalkUs {
+    margin-top: 50px;
+}
+.Purpose {
+    font-size: 14px;
+    opacity: 0.5;
+}
+.Contact {
+    font-size: 14px;
+    opacity: 0.5;
+}
+.Icon i {
+    margin-right: 28px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* ------------------Map------------------ */
+.Map {
+    margin-left: 105px;
+    margin-right: 105px;
+    margin-top: 10px;
+}
+.Map img {
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+}

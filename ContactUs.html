@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ContactUs.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oldenburg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Home.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ------------------Header-------------------- -->
+    <div class="Header">
+      <div class="Logo">
+        <a href="Home.html"> <span class="TextLogo">MINIMAL</span><br /></a>
+        <span class="TextContent">MULTI PURPOSE STORE</span>
+      </div>
+      <div class="Menu p-0 mt-4">
+        <ul class="ListMenu p-0">
+          <a href="Home.html"> <li class="">HOME</li></a>
+          <li class="mg">LOOKBOOK</li>
+          <li class="mg">PAGES</li>
+          <li class="mg">SHOP</li>
+          <li class="mg">BLOG</li>
+          <li class="Selected mg">CONTACT</li>
+        </ul>
+      </div>
+      <div class="Icon mt-4">
+        <i class="fas fa-search mr-3"></i>
+        <i class="fas fa-users-cog"></i>
+      </div>
+    </div>
+    <div class="CmImg">
+      <img src="IMG/CommonImg.jpg" alt="" />
+    </div>
+    <!-- ------------------Contact Us-------------------- -->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-3 TalkUs">
+        <h4 class="Title">Talk To Us</h4>
+        <p class="Purpose">
+          At Vero eos et accusamus et justo odius un dignissimos ducimus qui
+          blan dittis prasixer esentium voluptatum.
+        </p>
+        <br />
+        <p>
+          <b>A:</b
+          ><span class="Contact"> 40 Baria Street 133/2 NewYork City, US</span>
+        </p>
+        <p><b>P:</b><span class="Contact"> (00) 123 456 789</span></p>
+        <p><b>F:</b><span class="Contact"> (00) 35 314 0522</span></p>
+        <p><b>E:</b><span class="Contact"> vietnhse61995@gmail.com</span></p>
+        <br /><br />
+        <div class="Icon">
+          <i class="fab fa-facebook-f"> </i>
+          <i class="fab fa-twitter"> </i>
+          <i class="fab fa-google-plus-g"> </i>
+          <i class="fab fa-linkedin-in"> </i>
+          <i class="fab fa-dribbble"> </i>
+        </div>
+      </div>
+      <div class="col-6">
+        <section class="mb-4">
+          <!--Section heading-->
+          <h4 class="h1-responsive font-weight-bold text-center my-4">
+            Contact us
+          </h4>
+          <!--Section description-->
+          <p class="text-center Purpose w-responsive mx-auto mb-5">
+            Do you have any questions? Please do not hesitate to contact us
+            directly. Our team will come back to you within a matter of hours to
+            help you.
+          </p>
+
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+              <form
+                id="contact-form"
+                name="contact-form"
+                action="mail.php"
+                method="POST"
+              >
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-control"
+                      />
+                      <label for="name" class="Contact">Your name</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                      />
+                      <label for="email" class="Contact">Your email</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="form-control"
+                      />
+                      <label for="subject" class="Contact">Subject</label>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea
+                        type="text"
+                        id="message"
+                        name="message"
+                        rows="2"
+                        class="form-control md-textarea"
+                      ></textarea>
+                      <label for="message" class="Contact">Your message</label>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+              </form>
+
+              <div class="text-center text-md-left">
+                <a
+                  class="btn btn-secondary"
+                  onclick="document.getElementById('contact-form').submit();"
+                  >Send</a
+                >
+              </div>
+              <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p class="Contact">98251, HCM, US</p>
+                </li>
+
+                <li>
+                  <i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p class="Contact">+ 84 314 0522</p>
+                </li>
+
+                <li>
+                  <i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p class="Contact">vietnhse61995@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+        </section>
+        <!--Section: Contact v.2-->
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <!-- ------------------Map-------------------- -->
+    <div class="Map">
+      <img src="IMG/map.png" alt="">
+    </div>
+    <div>
+            <!-- Footer -->
+            <footer class="page-footer font-small stylish-color-dark pt-4">
+              <!-- Footer Links -->
+              <div class="container text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-4 mx-auto GetInTouch">
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                      Get In Touch
+                    </h5>
+                    <p>
+                      <b>A:</b
+                      ><span>
+                        No 40 Baria Sreet 133/2 NewYork City, NY, United States</span
+                      >
+                    </p>
+                    <p><b>E:</b><span> info.contact@gmail.com</span></p>
+                    <p><b>P:</b><span> (00) 35 314 0522</span></p>
+                  </div>
+                  <!-- Grid column -->
+      
+                  <hr class="clearfix w-100 d-md-none" />
+      
+                  <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                      Information
+                    </h5>
+      
+                    <ul class="list-unstyled">
+                      <li>
+                        About Us
+                      </li>
+                      <li class="mt-1">
+                        Delivery information
+                      </li>
+                      <li class="mt-1">
+                        Privacy Policy
+                      </li>
+                      <li class="mt-1">
+                        Term & Conditions
+                      </li>
+                      <li class="mt-1">
+                        Service
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Grid column -->
+      
+                  <hr class="clearfix w-100 d-md-none" />
+      
+                  <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                      My Account
+                    </h5>
+      
+                    <ul class="list-unstyled">
+                      <li>
+                        My Account
+                      </li>
+                      <li class="mt-1">
+                        Order History
+                      </li>
+                      <li class="mt-1">
+                        Wish List
+                      </li>
+                      <li class="mt-1">
+                        My Personal Info
+                      </li>
+                      <li class="mt-1">
+                        My Address
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Grid column -->
+      
+                  <hr class="clearfix w-100 d-md-none" />
+      
+                  <!-- Grid column -->
+                  <!-- <div class="col-md-2 mx-auto">
+        
+                Links
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+        
+              </div> -->
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+              <!-- Footer Links -->
+      
+              <hr />
+      
+              <!-- Call to action -->
+              <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                  <h5 class="mb-1">Register for free</h5>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+                </li>
+              </ul>
+              <!-- Call to action -->
+      
+              <hr />
+      
+              <!-- Social buttons -->
+              <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                  </a>
+                </li>
+              </ul>
+              <!-- Social buttons -->
+      
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">
+                Copyright @2016 Minimal Store Inc.
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          </div>
+  </body>
+</html>

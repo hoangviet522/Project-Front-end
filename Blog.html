@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oldenburg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ContactUs.css" />
+    <link rel="stylesheet" href="Blog.css" />
+    <title>Document</title>
+  </head>
+  <script>
+    $(document).ready(function() {
+      // ------------------Pagination---------------
+      $(".color__choice__item").click(function() {
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
+      });
+    });
+  </script>
+  <body>
+    <!-- ----------------Header------------- -->
+    <div class="Header">
+      <div class="Logo">
+        <a href="Home.html"> <span class="TextLogo">MINIMAL</span><br /></a>
+        <span class="TextContent">MULTI PURPOSE STORE</span>
+      </div>
+      <div class="Menu p-0 mt-4">
+        <ul class="ListMenu p-0">
+          <a href="Home.html"> <li class="">HOME</li></a>
+          <li class="mg">LOOKBOOK</li>
+          <li class="mg">PAGES</li>
+          <li class="mg">SHOP</li>
+          <li class="mg">BLOG</li>
+          <li class="Selected mg">CONTACT</li>
+        </ul>
+      </div>
+      <div class="Icon mt-4">
+        <i class="fas fa-search mr-3"></i>
+        <i class="fas fa-users-cog"></i>
+      </div>
+    </div>
+    <div class="CmImg">
+      <img src="IMG/BlogTitle.jpg" alt="" />
+    </div>
+    <!-- ---------------------Blog Left------------------ -->
+    <div class="row wrapper">
+      <div class="col-1"></div>
+      <div class="col-7 mt-4 Blog">
+        <div class="row">
+          <!-- ----------------Blog------------- -->
+          <div class="col-5 BlogImg">
+            <img src="IMG/Blog1.jpg" alt="" />
+          </div>
+          <div class="col-7 ">
+            <div class="Text_Blog_Content">
+              <span class="Day">10 JUL 2019</span><br />
+              <h5 class="Title">
+                13 App to Survive the Weekend Snow Storm
+              </h5>
+              <span class="Blog_Content"
+                >Those picturesque vacation instagrams have influenced the way
+                we want to travel so much so that now there's finally an app
+                dedi-cated to combining the two </span
+              ><br /><br />
+              <span class="Readmore"
+                ><b> READ MORE </b> <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+          <!-- ----------------Blog------------- -->
+          <div class="col-5 BlogImg mt-4">
+            <img src="IMG/Blog4.jpg" alt="" />
+          </div>
+          <div class="col-7 mt-4">
+            <div class="Text_Blog_Content">
+              <span class="Day">10 JUL 2019</span><br />
+              <h5 class="Title">
+                10 Must-Have Apps to Use on Vacation
+              </h5>
+              <span class="Blog_Content"
+                >Those picturesque vacation instagrams have influenced the way
+                we want to travel so much so that now there's finally an app
+                dedi-cated to combining the two </span
+              ><br /><br />
+              <span class="Readmore"
+                ><b> READ MORE </b> <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+          <!-- ----------------Blog------------- -->
+          <div class="col-5 BlogImg mt-4">
+            <img src="IMG/Blog3.jpg" alt="" />
+          </div>
+          <div class="col-7 mt-4">
+            <div class="Text_Blog_Content">
+              <span class="Day">10 JUL 2019</span><br />
+              <h5 class="Title">
+                20 Social Media Resolution for 2019
+              </h5>
+              <span class="Blog_Content"
+                >Those picturesque vacation instagrams have influenced the way
+                we want to travel so much so that now there's finally an app
+                dedi-cated to combining the two </span
+              ><br /><br />
+              <span class="Readmore"
+                ><b> READ MORE </b> <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+          <!-- ----------------Blog------------- -->
+          <div class="col-5 BlogImg mt-4">
+            <img src="IMG/Blog5.jpg" alt="" />
+          </div>
+          <div class="col-7 mt-4">
+            <div class="Text_Blog_Content">
+              <span class="Day">10 JUL 2019</span><br />
+              <h5 class="Title">
+                8 Apps will Useful for You and Your Family
+              </h5>
+              <span class="Blog_Content"
+                >Those picturesque vacation instagrams have influenced the way
+                we want to travel so much so that now there's finally an app
+                dedi-cated to combining the two </span
+              ><br /><br />
+              <span class="Readmore"
+                ><b> READ MORE </b> <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-12 Pagination d-flex justify-content-between mt-5">
+            <div class="Previous">
+              <span class="Pre">< Previous</span>
+            </div>
+            <div class="PagNumber d-flex">
+              <div class="color__choice__item mg selected">1</div>
+              <div class="color__choice__item mg">2</div>
+              <div class="color__choice__item ">3</div>
+            </div>
+            <div class="NextPage">
+              <span class="Previous">Next ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 border Sidebar_Right">
+          <h5 class="Search">Search</h5>
+          <input type="text">
+          <label for=""><i class="fas fa-search"></i></label>
+          <h5>Categories <i class="fas fa-list"></i></h5>
+          <ul class="List_categories p-0">
+              <li><i class="fas fa-caret-right"></i> Collection 2019</li>
+              <li><i class="fas fa-caret-right"></i> Summer</li>
+              <li><i class="fas fa-caret-right"></i> LookBook</li>
+              <li><i class="fas fa-caret-right"></i> New Trend</li>
+              <li><i class="fas fa-caret-right"></i> Spring</li>
+          </ul>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </body>
+</html>
