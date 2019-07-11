@@ -29,7 +29,7 @@
 .NextPage {
     margin-top: 3px;
 }
-.mg{
+.mg_paging{
    margin-right: 50px;
 }
 .PagNumber {
@@ -50,4 +50,13 @@
 /* -------------------Side Bar ------------------ */
 .List_categories {
     list-style-type: none;
+}
+.Search {
+    margin-top: 15px;
+}
+.Input_Search {
+    width: 270px;
+}
+.Categories {
+    margin-top: 10px;
 }

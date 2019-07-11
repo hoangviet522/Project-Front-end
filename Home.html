@@ -48,40 +48,6 @@
     <!-- <script src="MyScript.js"></script> -->
     <title>Document</title>
   </head>
-  <script>
-    $(document).ready(function() {
-      var currentSlide = 1;
-      // setInterval(function(){
-      //     if(currentSlide != 2){
-      //         currentSlide++;
-      //     }else{
-      //         currentSlide = 1;
-      //     }
-      //     $('.slideItem').hide();
-      //     $('#s' + currentSlide).show();
-      // }, 2000);
-
-      $("#btnRight").click(function() {
-        if (currentSlide != 2) {
-          currentSlide++;
-        } else {
-          currentSlide = 1;
-        }
-        $(".slideItem").hide();
-        $("#s" + currentSlide).show();
-      });
-
-      $("#btnLeft").click(function() {
-        if (currentSlide != 1) {
-          currentSlide--;
-        } else {
-          currentSlide = 2;
-        }
-        $(".slideItem").hide();
-        $("#s" + currentSlide).show();
-      });
-    });
-  </script>
   <body class="body">
     <!----------------------- Header ------------------------>
     <div class="HEADER">
@@ -119,8 +85,8 @@
             <li class="Home">HOME</li>
             <li>LOOKBOOK</li>
             <li>PAGES</li>
-            <li>SHOP</li>
-            <li>BLOG</li>
+            <a href="Shop.html"><li>SHOP</li></a> 
+            <a href="Blog.html"><li>BLOG</li></a>
             <a href="ContactUs.html"><li>CONTACT</li></a>
           </ul>
         </div>
@@ -294,17 +260,17 @@
             <div class="carousel-inner" role="listbox">
               <!--First slide-->
               <div class="carousel-item HomeSlider active ">
-                <img class="d-block" src="IMG/Slider1.jpg" alt="First slide" />
+                <a href="DetailProduct.html"><img class="d-block" src="IMG/Slider1.jpg" alt="First slide" /></a> 
               </div>
               <!--/First slide-->
               <!--Second slide-->
               <div class="carousel-item HomeSlider">
-                <img class="d-block" src="IMG/Slider2.jpg" alt="Second slide" />
+                <a href="DetailProduct.html"><img class="d-block" src="IMG/Slider2.jpg" alt="Second slide" /></a> 
               </div>
               <!--/Second slide-->
               <!--Third slide-->
               <div class="carousel-item HomeSlider">
-                <img class="d-block" src="IMG/Slider4.jpg" alt="Third slide" />
+                <a href="DetailProduct.html"><img class="d-block" src="IMG/Slider4.jpg" alt="Third slide" /></a> 
               </div>
               <!--/Third slide-->
             </div>

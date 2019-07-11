@@ -173,6 +173,7 @@
 .HomeSlider img {
     height: 567px;
     width: 100%;
+    cursor: pointer;
 }
 /*-------------Banner------------*/
 .Banner {
@@ -368,10 +369,22 @@
     opacity: 0.6;
 }
 
-
-
-
-
+/* -----------------DetailProduct---------------- */
+.Img_background .Img_big {
+    height: 570px;
+    width: 78%;
+    padding-left: 80px;
+}
+.Img_background .Img_small {
+    width: 110px;
+    height: 150px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.Font_family {
+    font-family: 'Oldenburg';
+}
 
 
 

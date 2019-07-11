@@ -31,6 +31,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="ContactUs.css" />
     <link rel="stylesheet" href="Blog.css" />
+    <link rel="stylesheet" href="Home.css" />
     <title>Document</title>
   </head>
   <script>
@@ -54,9 +55,9 @@
           <a href="Home.html"> <li class="">HOME</li></a>
           <li class="mg">LOOKBOOK</li>
           <li class="mg">PAGES</li>
-          <li class="mg">SHOP</li>
+          <a href="Shop.html"><li class="mg">SHOP</li></a> 
           <li class="mg">BLOG</li>
-          <li class="Selected mg">CONTACT</li>
+          <a href="ContactUs.html"> <li class="Selected mg">CONTACT</li></a>
         </ul>
       </div>
       <div class="Icon mt-4">
@@ -136,6 +137,7 @@
           <div class="col-5 BlogImg mt-4">
             <img src="IMG/Blog5.jpg" alt="" />
           </div>
+
           <div class="col-7 mt-4">
             <div class="Text_Blog_Content">
               <span class="Day">10 JUL 2019</span><br />
@@ -157,8 +159,8 @@
               <span class="Pre">< Previous</span>
             </div>
             <div class="PagNumber d-flex">
-              <div class="color__choice__item mg selected">1</div>
-              <div class="color__choice__item mg">2</div>
+              <div class="color__choice__item mg_paging selected">1</div>
+              <div class="color__choice__item mg_paging">2</div>
               <div class="color__choice__item ">3</div>
             </div>
             <div class="NextPage">
@@ -167,20 +169,266 @@
           </div>
         </div>
       </div>
-      <div class="col-3 border Sidebar_Right">
-          <h5 class="Search">Search</h5>
-          <input type="text">
-          <label for=""><i class="fas fa-search"></i></label>
-          <h5>Categories <i class="fas fa-list"></i></h5>
-          <ul class="List_categories p-0">
-              <li><i class="fas fa-caret-right"></i> Collection 2019</li>
-              <li><i class="fas fa-caret-right"></i> Summer</li>
-              <li><i class="fas fa-caret-right"></i> LookBook</li>
-              <li><i class="fas fa-caret-right"></i> New Trend</li>
-              <li><i class="fas fa-caret-right"></i> Spring</li>
-          </ul>
+      <!-- ------------------SideBar Right--------------- -->
+      <div class="col-3  Sidebar_Right">
+        <h5 class="Search">Search</h5>
+        <input type="text" class="Input_Search" />
+        <label for=""><i class="fas fa-search"></i></label>
+        <h5 class="Categories">Categories <i class="fas fa-list"></i></h5>
+        <ul class="List_categories p-0">
+          <li class="border-bottom mb-3 mt-3">
+            <i class="fas fa-caret-right"></i> Collection 2019
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i><span> Summer</span>
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i> LookBook
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i> New Trend
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i> Spring
+          </li>
+        </ul>
+        <!-- --------------Recent News--------------- -->
+        <div class="Recent_News">
+          <h5>Recent News</h5>
+          <div class="Products row mt-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Blog1.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Relax Tina Jean</div>
+              <div class="Price">10 Jul 2019</div>
+            </div>
+          </div>
+          <div class="Products row mt-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Blog5.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Relax Tina Jean</div>
+              <div class="Price">10 Jul 2019</div>
+            </div>
+          </div>
+          <div class="Products row mt-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Blog3.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Relax Tina Jean</div>
+              <div class="Price">10 Jul 2019</div>
+            </div>
+          </div>
+          <div class="Products row mt-3 mb-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Blog4.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Relax Tina Jean</div>
+              <div class="Price">10 Jul 2019</div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------Popular Tags--------------- -->
+        <div class="Popular_Tag">
+          <h5>Popular Tags <i class="fas fa-tags"></i></h5>
+          <div class="Tag_btn">
+            <button type="button" class="btn btn-sm btn-outline-secondary mb-2">
+              CREATIVE
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-secondary ml-2 mb-2"
+            >
+              UNIQUE
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary mb-2">
+              CONSTRUCTION
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-secondary ml-2 mb-2"
+            >
+              VIDEO
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">
+              INTERIOR DESIGN
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary ml-2">
+              IDEAS
+            </button>
+          </div>
+        </div>
       </div>
       <div class="col-1"></div>
+    </div>
+    <div class="mt-5">
+      <!-- Footer -->
+      <footer class="page-footer font-small stylish-color-dark pt-4 border-top">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto GetInTouch">
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Get In Touch
+              </h5>
+              <p>
+                <b>A:</b
+                ><span>
+                  No 40 Baria Sreet 133/2 NewYork City, NY, United States</span
+                >
+              </p>
+              <p><b>E:</b><span> info.contact@gmail.com</span></p>
+              <p><b>P:</b><span> (00) 35 314 0522</span></p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Information
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  About Us
+                </li>
+                <li class="mt-1">
+                  Delivery information
+                </li>
+                <li class="mt-1">
+                  Privacy Policy
+                </li>
+                <li class="mt-1">
+                  Term & Conditions
+                </li>
+                <li class="mt-1">
+                  Service
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                My Account
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  My Account
+                </li>
+                <li class="mt-1">
+                  Order History
+                </li>
+                <li class="mt-1">
+                  Wish List
+                </li>
+                <li class="mt-1">
+                  My Personal Info
+                </li>
+                <li class="mt-1">
+                  My Address
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-2 mx-auto">
+    
+            Links
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+    
+          </div> -->
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <hr />
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr />
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          Copyright @2016 Minimal Store Inc.
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
     </div>
   </body>
 </html>
