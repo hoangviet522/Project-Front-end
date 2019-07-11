@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oldenburg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="ContactUs.css" />
+    <link rel="stylesheet" href="Blog.css" />
+  </head>
+  <script>
+    $(document).ready(function() {
+      // ------------------Pagination---------------
+      $(".color__choice__item").click(function() {
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
+      });
+    });
+  </script>
+  <body>
+    <!-- ------------------Header-------------------- -->
+    <div class="Header">
+      <div class="Logo">
+        <a href="Home.html"> <span class="TextLogo">MINIMAL</span><br /></a>
+        <span class="TextContent">MULTI PURPOSE STORE</span>
+      </div>
+      <div class="Menu p-0 mt-4">
+        <ul class="ListMenu p-0">
+          <a href="Home.html"> <li class="">HOME</li></a>
+          <li class="mg">LOOKBOOK</li>
+          <li class="mg">PAGES</li>
+          <li class="mg">SHOP</li>
+          <a href="Blog.html"><li class="mg">BLOG</li></a>
+          <a href="ContactUs.html"> <li class="Selected mg">CONTACT</li></a>
+        </ul>
+      </div>
+      <div class="Icon mt-4">
+        <i class="fas fa-search mr-3"></i>
+        <i class="fas fa-users-cog"></i>
+      </div>
+    </div>
+    <div class="CmImg">
+      <img src="IMG/ProductlBg.jpg" alt="" />
+    </div>
+    <!-- --------- -->
+    <div class="Product_all row mt-4">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <div class="Atribute d-flex justify-content-around">
+          <div class="mt-1">Showing all product</div>
+          <div>
+            <!-- Default dropright button -->
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-light  btn-sm dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Color
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Red</a>
+                <a class="dropdown-item" href="#">Green</a>
+                <a class="dropdown-item" href="#">Blue</a>
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- Default dropright button -->
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-light btn-sm dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Size
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">M</a>
+                <a class="dropdown-item" href="#">XL</a>
+                <a class="dropdown-item" href="#">S</a>
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- Default dropright button -->
+            <div class="btn-group dropright">
+              <button
+                type="button"
+                class="btn btn-light btn-sm dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Price
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">< 100$</a>
+                <a class="dropdown-item" href="#">100$ -> 500$</a>
+                <a class="dropdown-item" href="#">> 500$</a>
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------Product List-------------------- -->
+        <div class="Product_list row mt-3">
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl1.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl2.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl3.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl4.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl5.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl6.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl7.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl8.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Productl9.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Design for life</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 570.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 Pagination d-flex justify-content-between mt-5">
+          <div class="Previous">
+            <span class="Pre">< Previous</span>
+          </div>
+          <div class="PagNumber d-flex">
+            <div class="color__choice__item mg_paging selected">1</div>
+            <div class="color__choice__item mg_paging">2</div>
+            <div class="color__choice__item ">3</div>
+          </div>
+          <div class="NextPage">
+            <span class="Previous">Next ></span>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------SideBar Right--------------- -->
+      <div class="col-3  Sidebar_Right">
+        <h5 class="Search">Search</h5>
+        <input type="text" class="Input_Search" />
+        <label for=""><i class="fas fa-search"></i></label>
+        <h5 class="Categories">Categories <i class="fas fa-list"></i></h5>
+        <ul class="List_categories p-0">
+          <li class="border-bottom mb-3 mt-3">
+            <i class="fas fa-caret-right"></i> Collection 2019
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i><span> Summer</span>
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i> LookBook
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i> New Trend
+          </li>
+          <li class="border-bottom mb-3">
+            <i class="fas fa-caret-right"></i> Spring
+          </li>
+        </ul>
+        <!-- --------------Recent News--------------- -->
+        <div class="Recent_News">
+          <h5>Recent News</h5>
+          <div class="Products row mt-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Feature3.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Ribbed long Bag</div>
+              <div class="Price">120.00 $</div>
+            </div>
+          </div>
+          <div class="Products row mt-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Feature4.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Ribbed long Bag</div>
+              <div class="Price">220.00 $</div>
+            </div>
+          </div>
+          <div class="Products row mt-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Feature5.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Ribbed long Bag</div>
+              <div class="Price">250.00 $</div>
+            </div>
+          </div>
+          <div class="Products row mt-3 mb-3">
+            <div class="col-6 Img pr-0">
+              <img src="IMG/Trendind1.jpg" alt="" />
+            </div>
+            <div class="col-6 ProductDetail pl-2">
+              <div class="Name">Ribbed long Bag</div>
+              <div class="Price">350.00 $</div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------Popular Tags--------------- -->
+        <div class="Popular_Tag">
+          <h5>Popular Tags <i class="fas fa-tags"></i></h5>
+          <div class="Tag_btn">
+            <button type="button" class="btn btn-sm btn-outline-secondary mb-2">
+              CREATIVE
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-secondary ml-2 mb-2"
+            >
+              UNIQUE
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary mb-2">
+              CONSTRUCTION
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-secondary ml-2 mb-2"
+            >
+              VIDEO
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">
+              INTERIOR DESIGN
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary ml-2">
+              IDEAS
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div>
+      <!-- Footer -->
+      <footer class="page-footer font-small stylish-color-dark pt-4 mt-4 border-top">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto GetInTouch">
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Get In Touch
+              </h5>
+              <p>
+                <b>A:</b
+                ><span>
+                  No 40 Baria Sreet 133/2 NewYork City, NY, United States</span
+                >
+              </p>
+              <p><b>E:</b><span> info.contact@gmail.com</span></p>
+              <p><b>P:</b><span> (00) 35 314 0522</span></p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Information
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  About Us
+                </li>
+                <li class="mt-1">
+                  Delivery information
+                </li>
+                <li class="mt-1">
+                  Privacy Policy
+                </li>
+                <li class="mt-1">
+                  Term & Conditions
+                </li>
+                <li class="mt-1">
+                  Service
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                My Account
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  My Account
+                </li>
+                <li class="mt-1">
+                  Order History
+                </li>
+                <li class="mt-1">
+                  Wish List
+                </li>
+                <li class="mt-1">
+                  My Personal Info
+                </li>
+                <li class="mt-1">
+                  My Address
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-2 mx-auto">
+  
+          Links
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div> -->
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <hr />
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr />
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          Copyright @2016 Minimal Store Inc.
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

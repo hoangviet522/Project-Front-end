@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Detail Product</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oldenburg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="ContactUs.css" />
+    <link rel="stylesheet" href="Blog.css" />
+  </head>
+  <script>
+    $(document).ready(function() {
+      $(".Img_small").click(function() {
+        $(".Img_big").attr("src", $(this).attr("src"));
+      });
+    });
+  </script>
+  <body>
+    <!-- ------------------Header-------------------- -->
+    <div class="Header">
+      <div class="Logo">
+        <a href="Home.html"> <span class="TextLogo">MINIMAL</span><br /></a>
+        <span class="TextContent">MULTI PURPOSE STORE</span>
+      </div>
+      <div class="Menu p-0 mt-4">
+        <ul class="ListMenu p-0">
+          <a href="Home.html"> <li class="">HOME</li></a>
+          <li class="mg">LOOKBOOK</li>
+          <li class="mg">PAGES</li>
+          <a href="Shop.html"><li class="mg">SHOP</li></a> 
+          <a href="Blog.html"><li class="mg">BLOG</li></a>
+          <a href="ContactUs.html"> <li class="Selected mg">CONTACT</li></a>
+        </ul>
+      </div>
+      <div class="Icon mt-4">
+        <i class="fas fa-search mr-3"></i>
+        <i class="fas fa-users-cog"></i>
+      </div>
+    </div>
+    <div class="CmImg">
+      <img src="IMG/Detail.jpg" alt="" />
+    </div>
+    <div class="row Product_detail mb-5">
+      <div class="col-1"></div>
+      <div class="col-6 Detail_img mt-5">
+        <div class="row Product_img">
+          <div class="Img_background pl-2 col-12">
+            <img src="IMG/Detail1.jpg" alt="" class="Img_big" />
+            <img src="IMG/Detail1.jpg" alt="" class="Img_small" />
+            <img src="IMG/Detail2.jpg" alt="" class="Img_small" />
+            <img src="IMG/Detail3.jpg" alt="" class="Img_small" />
+            <img src="IMG/Detail4.jpg" alt="" class="Img_small" />
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mt-5">
+        <h4 class="Font_family">Slimfit Cotton T-Shirt</h4>
+        <div class="myStar">
+          <i class="fas fa-star star"></i>
+          <i class="fas fa-star star"></i>
+          <i class="fas fa-star star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i><br />
+        </div>
+        <br />
+        <span>450.00 $</span><br /><br />
+        <span>.Side length 17.32</span><br />
+        <span>.Back length 24.8'</span><br /><br />
+        <span
+          >These measures have been calculated for a S size. Flowy fabric,
+          checkered textured fabric, rolled neck, long sleeve,fabric.</span
+        ><br /><br />
+        <span
+          >Casual line, cotton fabric, slim-fit, check-pattern, buttoned collar,
+          long sleeve with buttoned cuffs, button fastening on the front section </span
+        ><br /><br />
+        <span
+          >Denim collection cotton fabric, dark wash, five pockets, zip and one
+          button fastening, 16 cm hem. Smart Casual collection, cotton fabric,
+          textured design, rounded neck, long sleeve, cable knit finish. </span
+        ><br /><br />
+        <button type="button" class="btn btn-dark">ADD TO CART</button>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <hr />
+    <div class="text-center Font_family">RELATED PRODUCTS</div>
+    <div class="Related_product row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Feature3.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Metal earrings</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 310.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Trending3.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Metal earrings</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 310.00</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <!-- Card image -->
+            <div class="view overlay Avatar">
+              <img
+                class="card-img-top"
+                src="IMG/Feature5.jpg"
+                alt="Card image cap"
+              />
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h5 class="card-title">Metal earrings</h5>
+              <!-- Text -->
+              <div class="myStar">
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="far fa-star"></i><br />
+              </div>
+              <p class="Prices">$ 310.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <hr />
+    <div>
+      <!-- Footer -->
+      <footer class="page-footer font-small stylish-color-dark pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto GetInTouch">
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Get In Touch
+              </h5>
+              <p>
+                <b>A:</b
+                ><span>
+                  No 40 Baria Sreet 133/2 NewYork City, NY, United States</span
+                >
+              </p>
+              <p><b>E:</b><span> info.contact@gmail.com</span></p>
+              <p><b>P:</b><span> (00) 35 314 0522</span></p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                Information
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  About Us
+                </li>
+                <li class="mt-1">
+                  Delivery information
+                </li>
+                <li class="mt-1">
+                  Privacy Policy
+                </li>
+                <li class="mt-1">
+                  Term & Conditions
+                </li>
+                <li class="mt-1">
+                  Service
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                My Account
+              </h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  My Account
+                </li>
+                <li class="mt-1">
+                  Order History
+                </li>
+                <li class="mt-1">
+                  Wish List
+                </li>
+                <li class="mt-1">
+                  My Personal Info
+                </li>
+                <li class="mt-1">
+                  My Address
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none" />
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-2 mx-auto">
+        
+                Links
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+        
+              </div> -->
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <hr />
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr />
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          Copyright @2016 Minimal Store Inc.
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
